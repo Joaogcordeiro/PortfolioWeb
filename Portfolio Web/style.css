@@ -1,0 +1,393 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais do body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Container principal para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navegação principal */
+nav {
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Lista de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Itens da navegação */
+nav li {
+    margin: 0 1rem;
+}
+
+/* Links da navegação */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+/* Efeito hover nos links da navegação */
+nav a:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* Seções principais */
+section {
+    background: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos das seções */
+h2 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Lista de hobbies */
+.hobbies-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Itens dos hobbies */
+.hobbies-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 4px solid #667eea;
+}
+
+/* Seção de educação */
+.educacao-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #764ba2;
+}
+
+/* Título da educação */
+.educacao-item h3 {
+    color: #764ba2;
+    margin-bottom: 0.5rem;
+}
+
+/* Lista de idiomas */
+.idiomas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Itens de idioma */
+.idiomas-item {
+    background: #667eea;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Grid do portfólio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Itens do portfólio */
+.portfolio-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Efeito hover nos itens do portfólio */
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-color: #667eea;
+}
+
+/* Títulos dos projetos */
+.portfolio-item h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Links dos projetos */
+.projetos-link {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover nos links dos projetos */
+.projetos-link:hover {
+    background: #5a67d8;
+}
+
+/* Animação suave para rolagem */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Efeito de fade-in para as seções */
+section {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para a seção de contato */
+.contato-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    border: 1px solid #e9ecef;
+}
+
+/* Grupos de campos do formulário */
+.contato-form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Labels dos campos */
+.contato-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Inputs de texto e email */
+.contato-form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+/* Textarea para mensagem */
+.contato-form-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 120px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+/* Efeito focus nos inputs */
+.contato-form-input:focus,
+.contato-form-textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Placeholder styling */
+.contato-form-input::placeholder,
+.contato-form-textarea::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Botão de envio */
+.contato-enviar-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+/* Efeito hover no botão */
+.contato-enviar-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Efeito active no botão */
+.contato-enviar-btn:active {
+    transform: translateY(0);
+}
+
+/* Seção de informações de contato */
+.contato-info {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.contato-info h3 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* Container dos links de contato */
+.contato-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Links de contato */
+.contato-link {
+    display: inline-block;
+    background: white;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #667eea;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+/* Efeito hover nos links de contato */
+.contato-link:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 16px;
+        /* Previne zoom no iOS */
+    }
+}
+
+/* Validação visual para campos obrigatórios */
+.contato-form-input:invalid:not(:placeholder-shown),
+.contato-form-textarea:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+.contato-form-input:valid:not(:placeholder-shown),
+.contato-form-textarea:valid:not(:placeholder-shown) {
+    border-color: #28a745;
+}
+
+/* Animação para o formulário */
+.contato-form {
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

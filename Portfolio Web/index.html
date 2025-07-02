@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>João Gabriel Cordeiro - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho principal da pagina -->
+    <header>
+        <div class="container">
+            <h1>João Gabriel Cordeiro</h1>
+            <p class="subtitle">Desenvolvedor Web Full Stack</p>
+        </div>
+    </header>
+
+    <!-- Navegação principal com links para as seções da pagina-->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#educacao">Educação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container principal do conteúdo -->
+    <div class="container">
+        <!-- Seção Sobre Mim -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>
+                Olá! Sou João Gabriel Cordeiro, um desenvolvedor web apaixonado por tecnologia e inovação. 
+                Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER e trabalhando 
+                como analista de testes do setor Agro na Limber Software.
+            </p>
+            <p>
+                Tenho como objetivo meu crescimento profissional e pessoal, e contribuir para o ]
+		desenvolvimento da empresa, exercendo a função a mim empregado, da melhor forma possível.
+            </p>
+            
+            <!-- Lista de hobbies -->
+            <h3>Meus Hobbies</h3>
+            <div class="hobbies-lista">
+                <div class="hobbies-item">
+                    <strong>⚽ Futebol</strong>
+                </div>
+                <div class="hobbies-item">
+                    <strong>🏃‍♂️ Corrida</strong>
+                </div>
+                <div class="hobbies-item">
+                    <strong>🎮 Videogames</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Educação -->
+        <section id="educacao">
+            <h2>Formação Educacional</h2>
+            
+            <!-- Educação -->
+            <div class="educacao-item">
+                <h3>Ensino médio completo</h3>
+                <p><strong>Colégio Estadual La Salle</strong></p>
+                <p><strong>Concluído em: </strong>2018</p>
+            </div>
+
+            <div class="educacao-item">
+                <h3>Análise e Desenvolvimento de Sistemas EAD</h3>
+                <p><strong>ETEC - Escola Técnica Estadual</strong></p>
+                <p><strong>Período:</strong> 2024 - Atualmente</p>
+            </div>
+
+            <!-- Cursos complementares -->
+            <div class="educacao-item">
+                <h3>Informações Adicionais</h3>
+                <ul>
+                    <li>No colégio era participante do grupo PAJULA</li>
+                    <li>Participante do grupo jornada jovem Grupo Centro</li>
+                    <li>Conhecimento Básico de informática</li>
+                </ul>
+            </div>
+
+            <!-- Idiomas -->
+            <h3>Idiomas</h3>
+            <div class="idiomas">
+                <div class="language-item">Português - Nativo</div>
+                <div class="language-item">Inglês - Básico</div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio">
+            <h2>Meu Portfólio</h2>
+            <p>
+                Aqui estão alguns dos projetos que desenvolvi ao longo da minha carreira. 
+            </p>
+
+            <!-- Grid de projetos do portfólio -->
+            <div class="portfolio-grid">
+                <!-- Projeto 1 -->
+                <div class="portfolio-item">
+                    <h3>Cofrinho</h3>
+                    <p>
+                        Projeto desenvolvido utilizando a lógica de um cofrinho de dinheiro, no qual é possível adicionar e 
+                        remover valores em diferentes tipos de moedas e ainda obter o total convertido em reais.
+                    </p>
+                    <p><strong>Tecnologia:</strong> Java.</p>
+                    <a href="https://github.com/Joaogcordeiro/Cofrinho" class="projetos-link" target="_blank">
+                        Ver no GitHub
+                    </a>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="portfolio-item">
+                    <h3>Aplicativos em Python</h3>
+                    <p>
+                        Compõem-se de 4 aplicativos desenvolvidos em python com funcionalidades diversas, sendo: 
+                    </p>
+                    <p>
+                        1. Lista de Contatos.
+                    </p>
+                    <p>
+                        2. Sistema de Madeireira.
+                    </p>
+                    <p>
+                        3. Sistema de Orçamento para Plano de Saúde.
+                    </p>
+                    <p>
+                        4. Sistema de Cardápio para uma pizzaria.
+                    </p>
+                    <p><strong>Tecnologia:</strong> Python</p>
+                    <a href="https://github.com/Joaogcordeiro/Trabalho-Python" class="projetos-link" target="_blank">
+                        Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>
+                Gostou do meu trabalho? Tem algum projeto em mente? Vamos conversar! 
+                Preencha o formulário abaixo e entrarei em contato o mais breve possível.
+            </p>
+            
+            <!-- Formulário de contato -->
+            <form class="contato-form" action="#" method="POST">
+                <!-- Campo Nome -->
+                <div class="contato-form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        name="nome" 
+                        required 
+                        placeholder="Digite seu nome completo"
+                        class="contato-form-input"
+                    >
+                </div>
+
+                <!-- Campo Email -->
+                <div class="contato-form-group">
+                    <label for="email">E-mail *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        placeholder="seu.email@exemplo.com"
+                        class="contato-form-input"
+                    >
+                </div>
+
+                <!-- Campo Mensagem -->
+                <div class="contato-form-group">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea 
+                        id="mensagem" 
+                        name="mensagem" 
+                        required 
+                        placeholder="Conte-me sobre seu projeto ou dúvida..."
+                        class="contato-form-textarea"
+                        rows="6"
+                    ></textarea>
+                </div>
+
+                <!-- Botão de envio -->
+                <button type="submit" class="contato-enviar-btn">
+                    Enviar Mensagem
+                </button>
+            </form>
+
+            <!-- Outras formas de conmtato -->
+            <div class="contato-info">
+                <h3>Outras formas de contato:</h3>
+                <div class="contato-links">
+                    <a href="mailto:joaogcordeiro_30@hotmail.com" class="contato-link">
+                        📧 E-mail
+                    </a>
+                    <a href="https://www.linkedin.com/in/joão-cordeiro-27a9b81b1/" class="contato-link" target="_blank">
+                        💼 LinkedIn
+                    </a>
+                    <a href="https://github.com/Joaogcordeiro" class="contato-link" target="_blank">
+                        🐱 GitHub
+                    </a>
+                    <a href="https://wa.me/5546999714507" class="contato-link">
+                        📱 Whatsapp
+		    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
